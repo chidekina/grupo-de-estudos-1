@@ -40,15 +40,41 @@
 //     document.write(`${ano} não é bissexto`);
 // }
 
-const primeiroNumero = prompt ('Digite o primeiro número:'); 
-const segundoNumero = prompt ('Digite o segundo número:'); 
-const terceiroiroNumero = prompt ('Digite o terceiro número:'); 
-if(primeiroNumero > segundoNumero && primeiroNumero > terceiroiroNumero){
-    document.write(`${primeiroNumero} é o maior número`);
+// const primeiroNumero = prompt ('Digite o primeiro número:'); 
+// const segundoNumero = prompt ('Digite o segundo número:'); 
+// const terceiroiroNumero = prompt ('Digite o terceiro número:'); 
+// if(primeiroNumero > segundoNumero && primeiroNumero > terceiroiroNumero){
+//     document.write(`${primeiroNumero} é o maior número`);
+// }
+// else if(segundoNumero > primeiroNumero && segundoNumero > terceiroiroNumero){
+//     document.write(`${segundoNumero} é o maior número`);
+// }
+// else {
+//     document.write(`${terceiroiroNumero} é o maior número`);
+// }    
+
+// const qtd = prompt('Digite a quantidade de produtos vendidos: ');
+// const preco = prompt('Digite o preco do produto');
+// let total;
+
+// if(qtd > 10){
+//     total = qtd * (preco - (preco * 0.1));
+//     document.write(`O total a ser pago sera de R$${total}`)
+// } else {
+//     total = qtd * preco;
+//     document.write(`O total a ser pago sera de R$${total}`)
+// }
+
+const nota = prompt('Digite a nota:');
+
+if (nota > 0) {
+    document.write(`O conceito da sua ${nota} eh F`);
+} else if (nota > 20) {
+    document.write(`O conceito da sua ${nota} eh D`);
+} else if (nota > 40) {
+    document.write(`O conceito da sua ${nota} eh C`);
+} else if (nota > 60) {
+    document.write(`O conceito da sua ${nota} eh B`);
+} else if (nota > 80 && nota <= 100) {
+    document.write(`O conceito da sua ${nota} eh A`);
 }
-else if(segundoNumero > primeiroNumero && segundoNumero > terceiroiroNumero){
-    document.write(`${segundoNumero} é o maior número`);
-}
-else {
-    document.write(`${terceiroiroNumero} é o maior número`);
-}    
